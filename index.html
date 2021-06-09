@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>All Products - Farm Fresh</title>
+       <link rel="stylesheet" href="style.css">
+       <link rel="preconnect" href="https://fonts.gstatic.com">
+       <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,200;1,500&display=swap" rel="stylesheet">
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+       <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+       <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    </head>
+    <!--------------------Body-------------------------->
+    <body>
+
+<div class="container">
+    <div class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.jpeg" width="125px"></a>
+        </div>
+        <nav>
+            <div class="nav-links">
+            <ul id="MenuItems">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href=".html">For Students</a></li>
+                <li><a href=".html">For Eductaors</a></li>
+                <li><a href=".html">Tools</a></li>
+                <li><a href=".html">News</a></li>
+                <li><a href=".html">LOGIN</a></li>
+            </ul>
+        </div>
+        </nav>
+        <img src="images/menu.png" class="menu-icon" 
+        onclick="menutoggle()">
+    </div>
+   
+ </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!--------------------------------footer-------------------------->
+           <div class="footer">
+               <div class="container">
+                   <div class="row">
+                       <div class="footer-col-1">
+                           <h3>Download Our App</h3>
+                           <p>Download App from Android and ios mobile phone.</p>  
+                           <div class="app-logo">
+                               <img src="images/play-store.png">
+                               <img src="images/app-store.png">
+                           </div>
+                       </div>
+                       <div class="footer-cool-2">
+                             <img src="images/log.jpeg">
+                            <p>Our Purpose Is To Sustainably Make <br>The Student easy to view <br>There Preferred Collages around the India</p>  
+                       </div>
+                       <div class="footer-col-3">
+                           <h3>Useful Links</h3>
+                           <ul>
+                               <li>Study in abroad</li>
+                               <li>Contact us</li>
+                               <li>Search for collages </li>  
+                           </ul>
+                       </div>
+                       <div class="footer-col-4">
+                        <h3>Follow us</h3>
+                        <ul>
+                            <li>Facebook</li>
+                            <li>Twitter</li>
+                            <li>Instagram</li>
+                            <li>YouTube</li>  
+                        </ul>
+                    </div>
+                    <div class="footer-cool-5">
+                        <img src="images/paypal.png">
+                  </div>
+
+                   </div>
+                   <hr>
+                   <p class="copyright">Copyright 2021 - Team-5 </p>
+               </div>
+           </div>
+           
+         <!----------------------------------------- javascript for Toggle Menu  ------------------------->
+        <script>
+            var MenuItems = document.getElementById("MenuItems");
+
+            MenuItems.style.maxHeight = "0px";
+
+            function menutoggle(){
+                if(MenuItems.style.maxHeight == "0px")
+                {
+                    MenuItems.style.maxHeight = "200px";
+                }
+            else
+                 {
+                    MenuItems.style.maxHeight = "0px";
+
+                 }
+            }
+               
+         </script>  
+        
+     </body>
+
+</html>
