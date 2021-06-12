@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>All Products - Farm Fresh</title>
+        <title>EduYou</title>
        <link rel="stylesheet" href="style.css">
        <link rel="preconnect" href="https://fonts.gstatic.com">
        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,200;1,500&display=swap" rel="stylesheet">
@@ -14,34 +14,118 @@
     <!--------------------Body-------------------------->
     <body>
 
-<div class="container">
-    <div class="navbar">
-        <div class="logo">
-            <a href="index.html"><img src="images/logo.jpeg" width="125px"></a>
-        </div>
-        <nav>
-            <div class="nav-links">
-            <ul id="MenuItems">
-                <li><a href="index.html">HOME</a></li>
-                <li><a href=".html">For Students</a></li>
-                <li><a href=".html">For Eductaors</a></li>
-                <li><a href=".html">Tools</a></li>
-                <li><a href=".html">News</a></li>
-                <li><a href=".html">LOGIN</a></li>
+<!--------------------header----------------------------->
+
+<div class="menu-bar">
+<ul>
+    <li class="active"><a href="#"><i class="fa fa-home" ></i>Home</a></li>
+    <li><a href="#">Engeineering </a>
+        <div class="sub-menu-1">
+            <ul>
+                <li><a href="#">Bio Tech</a></li>
+                <li><a href="#">CIVIL</a></li>
+                <li><a href="#">Cse</a></li>
+                <li><a href="#">EEE</a></li>
+                <li><a href="#">ECE</a></li>
+                <li><a href="#">MEC</a></li>
             </ul>
         </div>
-        </nav>
-        <img src="images/menu.png" class="menu-icon" 
-        onclick="menutoggle()">
-    </div>
-   
- </div>
+    </li>
+    <li><a href="#">Management</a>
+        <div class="sub-menu-1">
+            <ul>
+                <li><a href="#">MBA</a></li>
+                <li><a href="#">BBA</a></li>
+                <li><a href="#">PGDM</a></li>
+                <li><a href="#">HOSPITAL MANAGEMENT</a></li>
+                <li><a href="#">HOTEL MANAGEMENT</a></li>
+                <li><a href="#">AVIATION MANAGEMENT</a></li>
+                <li><a href="#">EVENT MANAGEMENT</a></li>
+            </ul>
+        </div>
+    </li>
+    <li><a href="#">Science</a>
+        <div class="sub-menu-1">
+            <ul>
+                <li><a href="#">PHYSICS</a></li>
+                <li><a href="#">CHEMISTRY</a></li>
+                <li><a href="#">BIOLOGY</a></li>
+                <li><a href="#">SOCIAL SCIENCE</a></li>
+                <li><a href="#">GEOLOGY</a></li>
+                
+            </ul>
+        </div>
+    </li>
+    <li><a href="#">Pharmacy</a>
+        <div class="sub-menu-1">
+            <ul>
+                <li><a href="#">MBBS</a></li>
+                <li><a href="#">HOMEOPATHY</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+            </ul>
+        </div>
+    </li>
+    <li><a href="#">All Courses</a>
+        <div class="sub-menu-1">
+            <ul>
+                <li class="hover-me"><a href="#">Engeineering</a><i class="fa fa-angle-right" ></i>
+                    <div class="sub-menu-2">
+                        <ul>
+                            <li><a href="#">Bio Tech</a></li>
+                            <li><a href="#">CIVIL</a></li>
+                            <li><a href="#">Cse</a></li>
+                            <li><a href="#">EEE</a></li>
+                            <li><a href="#">ECE</a></li>
+                            <li><a href="#">MEC</a></li>
+                        </ul>
+                    </div>
+                
+                </li>
+                <li class="hover-me"><a href="#">MANAGEMENT</a><i class="fa fa-angle-right" ></i> 
+                    <div class="sub-menu-2">
+                        <ul>
+                            <li><a href="#">MBA</a></li>
+                            <li><a href="#">BBA</a></li>
+                            <li><a href="#">PGDM</a></li>
+                            <li><a href="#">HOSPITAL MANAGEMENT</a></li>
+                            <li><a href="#">HOTEL MANAGEMENT</a></li>
+                            <li><a href="#">AVIATION MANAGEMENT</a></li>
+                            <li><a href="#">EVENT MANAGEMENT</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="hover-me"><a href="#">SCIENCE</a><i class="fa fa-angle-right" ></i>
+                    <div class="sub-menu-2">
+                        <ul>
+                            <li><a href="#">PHYSICS</a></li>
+                            <li><a href="#">CHEMISTRY</a></li>
+                            <li><a href="#">BIOLOGY</a></li>
+                            <li><a href="#">SOCIAL SCIENCE</a></li>
+                            <li><a href="#">GEOLOGY</a></li>
+                            
+                        </ul>
+                    </div>
+                </li>
+                <li class="hover-me"><a href="#">PHARMACY</a><i class="fa fa-angle-right" ></i>
+                    <div class="sub-menu-2">
+                        <ul>
+                            <li><a href="#">MBBS</a></li>
+                            <li><a href="#">HOMEOPATHY</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </li>
+    <li><a href="#"><i class="fa fa-user"></i>About Us</a></li>
+    <li><a href="#"><i class="fa fa-phone"></i>Contact</a></li>
+</ul>
 
 
-
-
-
-
+</div>
 
 
 
@@ -105,7 +189,9 @@
            </div>
            
          <!----------------------------------------- javascript for Toggle Menu  ------------------------->
-        <script>
+        <script src="<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>"></script>
+         <script src="script.js"></script>
+         <script>
             var MenuItems = document.getElementById("MenuItems");
 
             MenuItems.style.maxHeight = "0px";
@@ -121,8 +207,9 @@
 
                  }
             }
+        
                
-         </script>  
+            </script>  
         
      </body>
 
